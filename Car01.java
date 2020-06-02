@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Car01 extends Auto{
 
 
@@ -10,11 +12,23 @@ public class Car01 extends Auto{
         int []val= {10, 20, 30, 40};
         Car01 car = new Car01(120, "Red");
         averageNumber(val);
+        welcomeMessage("Ahmed Morsi");
+
+
+    }
+
+    private static void welcomeMessage(String d) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter your name here :");
+        String name = sc.nextLine();
+        System.out.println("Thanks so much for using our system: " + name);
+
 
     }
 
 
     public static void averageNumber(int[] values){
+
         int count =0;
         int average=0;
 
