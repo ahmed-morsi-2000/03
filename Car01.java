@@ -23,9 +23,10 @@ public class Car01 extends Auto{
         int value=0;
         int[] arr= new int[number.length];
         for (int i=0; i<number.length; i++){
-            System.out.println("Please enter your value " + "number " + i);
-            Scanner sc = new Scanner(System.in);
-            arr[i] = sc.nextInt();
+            //System.out.println("Please enter your value " + "number " + i);
+            //Scanner sc = new Scanner(System.in);
+            //arr[i] = sc.nextInt();
+            arr[i] = number[i];
             value+= arr[i]/number.length;
 
         }
