@@ -13,8 +13,23 @@ public class Car01 extends Auto{
         Car01 car = new Car01(120, "Red");
         averageNumber(val);
         welcomeMessage("Ahmed Morsi");
+        averageHomeWork(val);
 
 
+    }
+
+    private static void averageHomeWork(int [] number) {
+        int sum =0;
+        int value=0;
+        int[] arr= new int[number.length];
+        for (int i=0; i<number.length; i++){
+            System.out.println("Please enter your value " + "number " + i);
+            Scanner sc = new Scanner(System.in);
+            arr[i] = sc.nextInt();
+            value+= arr[i]/number.length;
+
+        }
+        System.out.println(value);
     }
 
     private static void welcomeMessage(String d) {
@@ -22,6 +37,7 @@ public class Car01 extends Auto{
         System.out.println("Please enter your name here :");
         String name = sc.nextLine();
         System.out.println("Thanks so much for using our system: " + name);
+
 
 
     }
@@ -45,9 +61,6 @@ public class Car01 extends Auto{
 
 }
 
-class Car02{
-    public Car02() {
-    }
-}
+
 
 
