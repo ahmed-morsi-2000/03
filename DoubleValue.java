@@ -1,19 +1,23 @@
-public class DoubleValue {
+
+
+public class DoubleValue extends TwoDimensionArray{
+
+
+    public DoubleValue(int number, String name, int ID) {
+        super(number, name, ID);
+    }
+
+
+    public void getRealNumber(int x){
+        System.out.println(super.getNumber() * x);
+    }
+
 
     public static void main(String[] args) {
-        int[] val = {10, 20, 30};
-        doubleValue(val);
+        DoubleValue DV = new DoubleValue(20, "Ahmed", 5);
+        DV.getRealNumber(50);
     }
-
-    private static void doubleValue(int[] val) {
-
-        for (int i=0; i<val.length; i++){
-            val[i]= val[i]*val[i];
-            System.out.println(val[i]);
-        }
-
-
-    }
-
 
 }
+
+
